@@ -16,4 +16,4 @@ you can decide to don't crop around pixels using set "crop_around" parameter to 
 here is some examples:<br />
 ### example 1:
 <kbd>original image is:<br />!["original image"](gray_image.jpg)<br /><br />
-cleaned image is:<br />![cleaned image](cleaned_image.jpg)<br /><br />
+cleaned image is:<br />![cleaned image](cleaned_img.jpg)<br /><br />
