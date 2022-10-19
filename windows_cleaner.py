@@ -4,8 +4,9 @@ import pandas as pd
 
 
 def delete_little_part(img,text_pixel_ratio:int=10,symbol_pixel_ratio:int=60,x_step:int=10,y_step:int=10,is_background_white:bool=True, crop_around:bool=True):
-    #split image to sub boxes and delete some ratio part
-
+    #The explanation of the project's application is that the image is divided into separate and small areas with steps (x_step, y_step). Now, if there is text in any window, the number of black pixels compared to total pixels (assuming that the background is white) must be greater than a value (which we have specified as an input called "text_pixel_ratio") so that window should be Recognized as a window with text and it will not be cleaned.
+    #In addition, the next idea is that if the number of black pixels on the white background of the image is greater than a limit (which we specified with the name "symbol_pixel_ratio") in this case, that window will be identified as the window containing the symbol and will be deleted.
+    #It should be mentioned that the third idea implemented in this coding is that the input parameter called "crop_around" is defined, and when it is active, the final step in the windows of the x and y axes will always be cleared.
     x_step:int=max(20,x_step)
     y_step:int=max(30,y_step)
     if img.shape[2]>1:

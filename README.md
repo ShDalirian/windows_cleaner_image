@@ -2,6 +2,7 @@
 The explanation of the project's application is that the image is divided into separate and small areas with steps (x_step, y_step). Now, if there is text in any window, the number of black pixels compared to total pixels (assuming that the background is white) must be greater than a value (which we have specified as an input called "text_pixel_ratio") so that window should be Recognized as a window with text and it will not be cleaned.<br />
 In addition, the next idea is that if the number of black pixels on the white background of the image is greater than a limit (which we specified with the name "symbol_pixel_ratio") in this case, that window will be identified as the window containing the symbol and will be deleted.<br />
 It should be mentioned that the third idea implemented in this coding is that the input parameter called "crop_around" is defined, and when it is active, the final step in the windows of the x and y axes will always be cleared.<br />
+if there is a problem cantact me using my email address: sh.dalirian@ut.ac.ir<br/>
 ## run: main.py
 
 ## application:
